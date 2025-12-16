@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Meta Pixel Code -->
+<head><!-- META PIXEL + AUTO SUBSCRIBE (ONE SINGLE CODE) -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2719037335108503');
-fbq('track', 'PageView');
+s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1557696145261905');
+fbq('track','PageView');
+
+/* REAL SUBSCRIBE – ONLY ON THANK YOU / SUCCESS PAGE */
+if (
+  window.location.href.includes('thank') ||
+  window.location.href.includes('success') ||
+  window.location.href.includes('confirm')
+){
+  fbq('track','Subscribe',{
+    value: 1.00,
+    currency: 'INR'
+  });
+}
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2719037335108503&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<!-- END -->
 <meta charset="UTF-8">
 <title>Vinay Singh™ Original</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -127,5 +137,6 @@ body{
 
 </body>
 </html>
+
 
 
